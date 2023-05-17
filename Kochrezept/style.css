@@ -1,0 +1,54 @@
+  html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .image-gallery img {
+    flex: 1;
+    max-width: calc((100% - 4rem - 2rem) / 3);
+    height: auto;
+  }
+  
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar {
+    background-color: #aec4dc; 
+  }
+  
+  .navbar-brand {
+    color: #000000; 
+    font-weight: bold; 
+  }
+  
+  .navbar-dark .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 1rem; 
+  }
+
+  .navbar-nav .nav-link {
+    color: #000000; 
+  }
+  .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.75); 
+  }
