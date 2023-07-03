@@ -11,47 +11,58 @@
     <!-- Link To CSS -->
     <link rel="stylesheet" href="css/Style.css">
     <!-- Box Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <!-- Header -->
 <header>
      <!-- Nav -->
      <div class="nav">
-        <a href="Index.html" class="logo">Online Shop</a>
-        <div class="btn-group" style="border-radius: 18px; background-color: #ffffff;">
-            <nav class="navbar navbar-expand-lg">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <div class="navCategories">
-                        <a href="suits.html">Suits</a>&nbsp;
-                        <a href="coats.html">Coats</a>&nbsp;
-                        <a href="shoes.html">Shoes</a>&nbsp;
-                        <a href="watches.html">Watches</a>
+        <a href="titlepage.html" class="logo">Online Shop</a>
+        <div class="btn-group">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="navCategories">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="shirts.html" onclick="toggleDropdown()" style="cursor: pointer;">
+                            T-Shirts
+                        </a>
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li><a class="dropdown-item" href="#category1">Men</a></li>
+                            <li><a class="dropdown-item" href="#category2">Women</a></li>
+                            <li><a class="dropdown-item" href="#category3">Sport</a></li>
+                        </ul>
                     </div>
-            </nav>
+                </div>
+            </ul>
         </div>
-
         <!-- Cart-Icon -->
         <div class="cart-icon">
             <i class='bx bx-shopping-bag' id="cart-icon"></i>
         </div>
+    </div>
 
-       
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdownToggle = document.querySelector(".dropdown-toggle");
+            var dropdownMenu = document.getElementById("dropdownMenu");
+
+            dropdownToggle.addEventListener("click", function () {
+                dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+        });
+    </script>
 </header>
 
 <body>
     <!-- Shop -->
   
-        <p class="section-title">Welcome to Elmar's Online Shop</p>
+        <p class="title">Welcome to Elmar's Online Shop</p>
        
-        <p class="subtitle">Your destination for stylish fashion and watches</p>
-
-    <section class="benefits">
-        <p class="benefits-title">Why Elmar's Online Shop?</p>
-        <p>Discover a wide variety of suits, coats, shoes, and watches from renowned brands.</p>
-        <p>Our garments are designed with attention to detail, ensuring a comfortable fit.</p>
-        <p>Complete your look with our collection of exquisite watches.</p>
-    </section>
+        <p class="subtitle">Subtitle</p>
 </body>
 
 </html>

@@ -38,6 +38,7 @@ function ready() {
   var addCart = document.getElementsByClassName("add-cart");
   for (var i = 0; i < addCart.length; i++) {
     var button = addCart[i];
+    console.log("Cart Icon added");
     button.addEventListener("click", addCartClicked);
   }
   // Checkout Button Work
