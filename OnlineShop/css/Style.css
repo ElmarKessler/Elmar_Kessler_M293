@@ -53,43 +53,29 @@ header {
     font-weight: 600;
     text-align: center;
     margin-bottom: 0.8rem;
-    margin-top: 15rem;
+    margin-top: 11rem;
 }
 
 .section-title {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 @media only screen and (max-width: 442px) {
 .section-title {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
-  margin-top: 6.4rem;
+  margin-top: 5.4rem;
 }
 }
 .subtitle{
   font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 14rem;
+    margin-bottom: 5rem;
 }
-.benefits-title{
-font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 1rem;
-    
-}
-.benefits{
-  font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -100,6 +86,8 @@ font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .dropdown-menu {
@@ -133,16 +121,8 @@ font-size: 1rem;
     align-items: center;
     justify-content: space-between;
     padding: 8px 0;
-    margin: auto;
+    margin:auto;
     width: 90%;
-}
-.navCategories{
-    margin-top: 7px;
-    margin-left: 8px;
-    font-weight: 600;
-    height: 33px;
-    margin-right: 8px;
-    color: #000000;
 }
 .logo {
     font-size: 1.6rem;
@@ -495,4 +475,12 @@ font-size: 1rem;
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+  }
+  .Top-Seller {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: red;
+    font-size: 150%;
+    font-weight: bold;
   }
