@@ -47,7 +47,7 @@
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%;
+  width: auto;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
