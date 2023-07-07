@@ -1,0 +1,87 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  .product {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .product-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  .product-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .product-price {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: hsl(0, 16%, 73%);
+  }
+  .add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: hsl(0, 16%, 73%);
+  }
+  .back-button:hover {
+    background-color: hsl(0, 5%, 60%);
+  }
+  .add-button:hover {
+    background-color: hsl(0, 5%, 60%);
+  }
+  .add-cart {
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px; background-color: #241313; padding: 20px;
+}
+.add-cart:hover {
+    background: hsl(0, 33%, 17%);
+}
