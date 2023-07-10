@@ -11,6 +11,7 @@
     <!-- Link To CSS -->
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Newsletter.css">
     <!-- Box Icons -->
 </head>
 
@@ -110,35 +111,55 @@
     <p>Top-Seller</p>
     <p>Discount 50%</p>
 </div>
- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+ <br> <br> <br> 
+
+ <section class="newsletter container">
+  <h2 class="newsletter-title">Want to receive a Newsletter every week? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subscribe here</h2>
+  <form class="newsletter-form" onsubmit="return false;">
+      <label for="newsletter-email">Email:</label>
+      <input type="email" id="newsletter-email" required>
+      <input class="btn-newsletter" type="submit" value="Subscribe" onclick="subscribeNewsletter()">
+  </form>
+</section>
+<br> <br> <br> <br> <br> <br> 
+
+<script>
+  function subscribeNewsletter() {
+      var email = document.getElementById("newsletter-email").value;
+      // Hier kannst du die gewünschte Aktion ausführen, z.B. eine Bestätigung anzeigen oder die Daten speichern
+      console.log("Subscribed Email: " + email);
+      // Zurücksetzen des Eingabefelds
+      document.getElementById("newsletter-email").value = "";
+  }
+</script>
 
 </body>
 <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Unser Store</h3>
-          <p>Adresse: Musterstraße 123, 12345 Musterstadt</p>
-          <p>Telefon: 01234-56789</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Öffnungszeiten</h3>
-          <p>Montag - Freitag: 9:00 - 18:00</p>
-          <p>Samstag: 10:00 - 16:00</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Folgen Sie uns</h3>
-          <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
-          <a href="https://www.twitter.com" ><i class="fab fa-twitter"></i>Instagram</a>
-          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>Twitter</a>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Unser Store</h3>
+        <p>Adresse: Musterstraße 123, 12345 Musterstadt</p>
+        <p>Telefon: 01234-56789</p>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-            <br>
-          <p>&copy; 2023 T-Shirt Store ZH. Alle Rechte vorbehalten.</p>
-        </div>
+      <div class="col-md-4">
+        <h3>Öffnungszeiten</h3>
+        <p>Montag - Freitag: 9:00 - 18:00</p>
+        <p>Samstag: 10:00 - 16:00</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Folgen Sie uns</h3>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://www.twitter.com" ><i class="fab fa-twitter"></i>Twitter</a>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-12">
+          <br>
+        <p>&copy; 2023 T-Shirt Store ZH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </div>
   </footer>
 </html>
